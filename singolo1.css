@@ -17,6 +17,11 @@ body {
     margin: 0;
 }
 
+h1, h2, h3, h4, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
 /* HEADER */
 
 .header {
@@ -160,7 +165,6 @@ body {
     color: var(--theme-black-color);
     font-family: "Lato";
     font-weight: 900;
-    margin: 0;
     position: absolute;
     top: 52px;
     left: 40px;
@@ -174,7 +178,6 @@ body {
     font-family: "Lato";
     font-weight: 300;
     color: var(--theme-neutral-black-color);
-    margin: 0;
     position: absolute;
     top: 98px;
     left: 41px;
@@ -185,7 +188,6 @@ body {
     display: flex;
     width: 957px;
     height: 247px;
-    margin: 0;
     padding: 0;
     position: absolute;
     left: 42px;
@@ -213,7 +215,6 @@ body {
     color: var(--theme-black-color);
     font-family: "Lato";
     font-weight: 900;
-    margin: 0;
     margin-bottom: 10px;
 }
 
@@ -223,7 +224,6 @@ body {
     color: var(--theme-neutral-black-color);
     font-family: "Lato";
     font-weight: 400;
-    margin: 0;
 }
 /* FOOTER */
 
