@@ -1,0 +1,28 @@
+:root {
+    --header-bg-color: #2d303a;
+    --text-white-color: #ffffff;
+    --text-white-accent-color: #dedede;
+    --accent-color: #f06c64;
+    --main-second-primary-color:#f0d8d9;
+
+    --footer-bg-color: #f2f2f2;
+    --theme-black-color: #666d89;
+    --theme-neutral-black-color: #767e9e;
+
+    --input-background: #d6564f;
+    --input-placeholder: #f48c8f;
+
+    --divider-header-bg-color:#323746;
+    --divider-main-bg-color:#ea676b;
+    --divider-footer-bg-color:#ffffff;
+}
+
+body {
+    width: 1020px;
+    margin: 0;
+}
+
+h1, h2, h3, h4, p, ul {
+    margin: 0;
+    padding: 0;
+}

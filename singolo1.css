@@ -49,7 +49,7 @@ h1, h2, h3, h4, p, ul {
 .nav__list {
     list-style-type: none;
     display: flex;
-    margin-top: 25px;
+    margin-top: 8px;
 }
 
 .nav__item {

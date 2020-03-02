@@ -68,6 +68,7 @@ h1, h2, h3, h4, p, ul {
     border: 1px solid var(--theme-black-color);
     border-radius: 5px;
     padding: 0 7px;
+    height: 20px;
 }
 
 .nav__link {
@@ -108,7 +109,7 @@ h1, h2, h3, h4, p, ul {
 /* FOOTER */
 
 .footer {
-    height: 728px;
+    height: 720px;
     background-color: var(--footer-bg-color);
     position: relative;
 }
