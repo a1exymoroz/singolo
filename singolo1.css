@@ -208,6 +208,9 @@ h1, h2, h3, h4, p, ul {
     margin-right: 18px;
 }
 
+.services__info {
+    width: 220px;
+}
 
 .services__header {
     font-size: 18px;
