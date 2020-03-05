@@ -12,12 +12,13 @@
         <p class="main__paragraph">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
         
         <section class="main__quote">
-            <div class="main__inputs">
-                <input class="main__input" type="text" name="name" placeholder="Name (Required)">
-                <input class="main__input" type="email" name="email" placeholder="Email (Required)">
+            <form class="main__inputs">
+                <input class="main__input" type="text" name="name" placeholder="Name (Required)" required>
+                <input class="main__input" type="email" name="email" placeholder="Email (Required)" required>
                 <input class="main__input" type="text" name="subject" placeholder="Subject">
                 <textarea class="main__input main__input_text-area" name="detail" placeholder="Describe your project in detail..."></textarea>
-            </div>
+                <input class="main__input_submit" type="submit" name="submit" placeholder="Submit">
+            </form>
             <div class="main__info">
                 <h3 class="info__header">Contact Information</h3>
                 <p class="info__paragraph">Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis.</p>
