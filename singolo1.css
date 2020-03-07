@@ -42,7 +42,8 @@ h1, h2, h3, h4, p, ul {
     font-weight: 700;
 }
 
-.header__main_accent {
+.header__main::after {
+    content: "*";
     color: var(--accent-color);
 }
 
@@ -182,6 +183,7 @@ h1, h2, h3, h4, p, ul {
     position: absolute;
     top: 98px;
     left: 41px;
+    text-align: justify;
 }
 
 .services {
@@ -201,6 +203,7 @@ h1, h2, h3, h4, p, ul {
     height: 87px;
     display: flex;
     margin-right: 19px;
+    overflow: hidden;
 }
 
 .services__img {
@@ -228,6 +231,7 @@ h1, h2, h3, h4, p, ul {
     color: var(--theme-neutral-black-color);
     font-family: "Lato";
     font-weight: 400;
+    text-align: justify;
 }
 /* FOOTER */
 
