@@ -140,11 +140,6 @@ h1, h2, h3, h4, p, ul {
 
 .info__list {
     list-style-type: none;
-    font-size: 12px;
-    line-height: 22px;
-    color: var(--main-second-primary-color);
-    font-family: "Lato";
-    font-weight: 400;
 }
 
 .list__item {
@@ -157,6 +152,15 @@ h1, h2, h3, h4, p, ul {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.list__link {
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 22px;
+    color: var(--main-second-primary-color);
+    font-family: "Lato";
+    font-weight: 400;
 }
 /* MAIN */
 
@@ -191,5 +195,4 @@ h1, h2, h3, h4, p, ul {
 .social__img {
     margin-right: 4px;
 }
-
 /* FOOTER */
