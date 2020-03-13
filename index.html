@@ -1,15 +1,411 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Singolo</title>
-    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="singoloFirst"></div>
-    <div id="singoloSecond"></div>
-    <div id="singoloThird"></div>
-    <script src="index.js"></script>
+    <header id="home" class="header block__padding">
+      <h1 class="header__main">SINGOLO</h1>
+      <nav class="header-nav">
+            <a class="header-nav__link header-nav__link_active" href="#home">Home</a>
+            <a class="header-nav__link" href="#services">Services</a>
+            <a class="header-nav__link" href="#portfolio">Portfolio</a>
+            <a class="header-nav__link" href="#about">About</a>
+            <a class="header-nav__link" href="#contact">Contact</a>
+        </ul>
+      </nav>
+    </header>
+    <div class="header__divider"></div>
+    <main>
+      <section class="slider">
+        <img
+          class="slider__arrow slider__arrow_left"
+          src="./assets/singolo/arrow-left.png"
+          alt="Arrow left"
+          tabindex="0"
+        />
+        <div class="slide__wrapper">
+
+          <div class="slide__item slide-one">
+            <div class="phone phone__vertical">
+              <img
+                class="phone__base"
+                src="./assets/singolo/iphone.png"
+                alt="Phone picture"
+              />
+              <div class="phone__pic">
+                <img src="./assets/singolo/left-pic.png" alt="Phone picture" />
+              </div>
+              <img
+                class="phone__shadow"
+                src="./assets/singolo/shadow-left.png"
+                alt="Phone shadow"
+              />
+            </div>
+            <div class="phone phone__horizontal">
+              <img
+                class="phone__base"
+                src="./assets/singolo/iphone.png"
+                alt="Phone picture"
+              />
+              <div class="phone__pic">
+                <img src="./assets/singolo/right-pic.png" alt="Phone picture" />
+              </div>
+              <img
+                class="phone__shadow phone__shadow_right"
+                src="./assets/singolo/shadow-right.png"
+                alt="Phone shadow"
+              />
+            </div>
+          </div>
+  
+          <div class="slide__item slide-two">
+            <div class="phone slide-two__phone_one">
+              <img
+                class="phone__base"
+                src="./assets/singolo/iphone.png"
+                alt="Phone picture"
+              />
+              <div class="phone__pic">
+                <img src="./assets/singolo/right-pic.png" alt="Phone picture" />
+              </div>
+              <img
+                class="phone__shadow"
+                src="./assets/singolo/shadow-left.png"
+                alt="Phone shadow"
+              />
+            </div>
+            <div class="phone slide-two__phone_two">
+              <img
+                class="phone__base"
+                src="./assets/singolo/iphone.png"
+                alt="Phone picture"
+              />
+              <div class="phone__pic">
+                <img src="./assets/singolo/left-pic.png" alt="Phone picture" />
+              </div>
+              <img
+                class="phone__shadow"
+                src="./assets/singolo/shadow-left.png"
+                alt="Phone shadow"
+              />
+            </div>
+            <div class="phone slide-two__phone_three">
+              <img
+                class="phone__base"
+                src="./assets/singolo/iphone.png"
+                alt="Phone picture"
+              />
+              <div class="phone__pic">
+                <img src="./assets/singolo/right-pic.png" alt="Phone picture" />
+              </div>
+              <img
+                class="phone__shadow"
+                src="./assets/singolo/shadow-left.png"
+                alt="Phone shadow"
+              />
+            </div>
+          </div>
+
+        </div>
+        <img
+          class="slider__arrow slider__arrow_right"
+          src="./assets/singolo/arrow-right.png"
+          alt="Arrow right"
+          tabindex="0"
+        />
+      </section>
+      <div class="slider__divider"></div>
+      <section id="services" class="services block__padding">
+        <h2 class="services__header">Our Services</h2>
+        <p class="services__paragraph">
+          Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum.
+          Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget
+          lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo,
+          tortor mauris condimentum nibh.
+        </p>
+        <ul class="services-list">
+          <li class="services-list__item">
+            <img
+              class="services-list__img"
+              src="./assets/singolo/icons/pen.png"
+              alt="Pen"
+            />
+            <div class="services-list__info">
+              <h3 class="services-list__header">Custom Design</h3>
+              <p class="services-list__paragraph">
+                Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam
+                laoreet, viverra lacus ut, ultrices velit.
+              </p>
+            </div>
+          </li>
+          <li class="services-list__item">
+            <img
+              class="services-list__img"
+              src="./assets/singolo/icons/bulb.png"
+              alt="Bulb"
+            />
+            <div class="services-list__info">
+              <h3 class="services-list__header">Inovative Ideas</h3>
+              <p class="services-list__paragraph">
+                Quisque luctus, quam eget molestie commodo, lacus purus cursus
+                purus, nec rutrum tellus dolor id lorem.
+              </p>
+            </div>
+          </li>
+          <li class="services-list__item">
+            <img
+              class="services-list__img"
+              src="./assets/singolo/icons/heart.png"
+              alt="Heart"
+            />
+            <div class="services-list__info">
+              <h3 class="services-list__header">Love Is The Answer</h3>
+              <p class="services-list__paragraph">
+                Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet
+                turpis, et consequat felis. Quisque condimentum.
+              </p>
+            </div>
+          </li>
+          <li class="services-list__item">
+            <img
+              class="services-list__img"
+              src="./assets/singolo/icons/phone.png"
+              alt="Phone"
+            />
+            <div class="services-list__info">
+              <h3 class="services-list__header">Responsive Layout</h3>
+              <p class="services-list__paragraph">
+                Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas
+                blandit nunc ligula. Praesent elit leo.
+              </p>
+            </div>
+          </li>
+          <li class="services-list__item">
+            <img
+              class="services-list__img"
+              src="./assets/singolo/icons/bubble.png"
+              alt="Bubble"
+            />
+            <div class="services-list__info">
+              <h3 class="services-list__header">24 / 7 Support</h3>
+              <p class="services-list__paragraph">
+                Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi.
+                Nulla a sem erat. Pellentesque egestas venenatis lorem .
+              </p>
+            </div>
+          </li>
+          <li class="services-list__item">
+            <img
+              class="services-list__img"
+              src="./assets/singolo/icons/star.png"
+              alt="Star"
+            />
+            <div class="services-list__info">
+              <h3 class="services-list__header">Feel Like A Star</h3>
+              <p class="services-list__paragraph">
+                Quisque hendrerit purus dapibus, ornare nibh vitae, viverra
+                nibh. Fusce vitae aliquam tellus.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <div class="services__divider "></div>
+      <section id="portfolio" class="portfolio block__padding">
+        <h2 class="portfolio__main">Portfolio</h2>
+        <p class="portfolio__paragraph">
+          Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget
+          lacinia odio sem nec elit.
+        </p>
+        <nav class="portfolio-nav">
+          <button type="button" class="portfolio-nav__button portfolio-nav__button_active">All</button>
+          <button type="button" class="portfolio-nav__button">Web Design</button>
+          <button type="button" class="portfolio-nav__button">Graphic Design</button>
+          <button type="button" class="portfolio-nav__button">ArtWork</button>
+        </nav>
+        <div class="portfolio__images">
+          <img
+            class="portfolio__image"
+            src="./assets/portfolio/header.png"
+            alt="image"
+          />
+          <img
+            class="portfolio__image"
+            src="./assets/portfolio/header.png"
+            alt="image"
+          />
+          <img
+            class="portfolio__image"
+            src="./assets/portfolio/header.png"
+            alt="image"
+          />
+          <img
+            class="portfolio__image"
+            src="./assets/portfolio/header.png"
+            alt="image"
+          />
+          <img
+            class="portfolio__image"
+            src="./assets/portfolio/header.png"
+            alt="image"
+          />
+          <img
+            class="portfolio__image"
+            src="./assets/portfolio/header.png"
+            alt="image"
+          />
+          <img
+            class="portfolio__image"
+            src="./assets/portfolio/header.png"
+            alt="image"
+          />
+          <img
+            class="portfolio__image"
+            src="./assets/portfolio/header.png"
+            alt="image"
+          />
+          <img
+            class="portfolio__image"
+            src="./assets/portfolio/header.png"
+            alt="image"
+          />
+          <img
+            class="portfolio__image"
+            src="./assets/portfolio/header.png"
+            alt="image"
+          />
+          <img
+            class="portfolio__image"
+            src="./assets/portfolio/header.png"
+            alt="image"
+          />
+          <img
+            class="portfolio__image"
+            src="./assets/portfolio/header.png"
+            alt="image"
+          />
+        </div>
+      </section>
+      <div class="portfolio__divider"></div>
+      <section id="about" class="about block__padding">
+        <h2 class="about__header">About Us</h2>
+        <p class="about__paragraph">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+        <ul class="people">
+            <li class="people__item">
+                <img class="people__img" src="./assets/portfolio/face.png" alt="Face">
+                <h3 class="people__header">Adam Jensen</h3>        
+                <p class="people__paragraph">Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
+                <div class="people__social">
+                    <a href="#"><img class="social__img" src="./assets/portfolio/Facebook.png" alt="Facebook"></a>
+                    <a href="#"><img class="social__img" src="./assets/portfolio/Google.png" alt="Google"></a>
+                    <a href="#"><img class="social__img" src="./assets/portfolio/Twitter.png" alt="Twitter"></a>
+                    <a href="#"><img class="social__img" src="./assets/portfolio/LinkedIn.png" alt="LinkedIn"></a>
+                </div>
+            </li>
+            <li class="people__item">
+                <img class="people__img" src="./assets/portfolio/face.png" alt="Face">
+                <h3 class="people__header">Desmond Miles</h3>        
+                <p class="people__paragraph">Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
+                <div class="people__social">
+                    <a href="#"><img class="social__img" src="./assets/portfolio/Facebook.png" alt="Facebook"></a>
+                    <a href="#"><img class="social__img" src="./assets/portfolio/Google.png" alt="Google"></a>
+                    <a href="#"><img class="social__img" src="./assets/portfolio/Twitter.png" alt="Twitter"></a>
+                    <a href="#"><img class="social__img" src="./assets/portfolio/LinkedIn.png" alt="LinkedIn"></a>
+                </div>
+            </li>
+            <li class="people__item">
+                <img class="people__img" src="./assets/portfolio/face.png" alt="Face">
+                <h3 class="people__header">Scolara Visari</h3>        
+                <p class="people__paragraph">Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.</p>
+                <div class="people__social">
+                    <a href="#"><img class="social__img" src="./assets/portfolio/Facebook.png" alt="Facebook"></a>
+                    <a href="#"><img class="social__img" src="./assets/portfolio/Google.png" alt="Google"></a>
+                    <a href="#"><img class="social__img" src="./assets/portfolio/Twitter.png" alt="Twitter"></a>
+                    <a href="#"><img class="social__img" src="./assets/portfolio/LinkedIn.png" alt="LinkedIn"></a>
+                </div>
+            </li>
+        </ul>
+      </section>
+      <div class="about__divider"></div>
+      <section id="contact" class="quote block__padding">
+        <h2 class="quote__header">Get a Quote</h2>
+        <p class="quote__paragraph">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+        <div class="quote__quote">
+            <form class="quote__inputs">
+                <input class="quote__input" type="text" name="name" placeholder="Name (Required)" required>
+                <input class="quote__input" type="email" name="email" placeholder="Email (Required)" required>
+                <input class="quote__input" type="tel" name="tel" placeholder="Subject">
+                <textarea class="quote__input quote__input_text-area" name="detail" placeholder="Describe your project in detail..."></textarea>
+                <input class="quote__input_submit" type="submit" name="submit" placeholder="Submit">
+            </form>
+            <div class="quote-info">
+                <h3 class="quote-info__header">Contact Information</h3>
+                <p class="quote-info__paragraph">Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis.</p>
+                <ul class="quote-info__list">
+                    <li class="quote-info__item">
+                        <div class="quote-info__img">
+                            <img src="./assets/quote/location.png" alt="Address">
+                        </div>
+                        
+                        <a class="quote-info__link" href="#">Elm St. 14/05 Lost City</a>
+                    </li>
+                    <li class="quote-info__item">
+                        <div class="quote-info__img">
+                            <img src="./assets/quote/phone.png" alt="Phone">
+                        </div>
+                        <a class="quote-info__link" href="tel:03528 331 86 35">03528 331 86 35</a>
+                    </li>
+                    <li class="quote-info__item">
+                        <div class="quote-info__img">
+                            <img src="./assets/quote/mail.png" alt="Mail">
+                        </div>
+                        <a class="quote-info__link" href="mailto:info@singolo.com">info@singolo.com</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+      </section>
+      <div class="quote__divider"></div>
+    </main>
+    <footer class="footer block__padding">
+      <span class="footer__copy">© Copyright 2013</span>
+      <div class="footer__social">
+        
+        <a class="footer__social_link" href="#">
+          <img
+            src="./assets/portfolio/Facebook.png"
+            alt="Facebook"/>
+        </a>
+        
+        <a class="footer__social_link" href="#">
+          <img
+            src="./assets/portfolio/Google.png"
+            alt="Google"/>
+        </a>
+        
+        <a class="footer__social_link" href="#">
+          <img
+            src="./assets/portfolio/Twitter.png"
+            alt="Twitter"/>
+        </a>
+        
+        <a class="footer__social_link" href="#">
+          <img
+            src="./assets/portfolio/LinkedIn.png"
+            alt="LinkedIn"/>
+        </a>
+      </div>
+    </footer>
+    <div class="submit-modal">
+
+    </div>
+    <script src="./script.js"></script>
   </body>
 </html>
