@@ -231,66 +231,90 @@
           <button type="button" class="portfolio-nav__button">ArtWork</button>
         </nav>
         <div class="portfolio__images">
-          <img
-            class="portfolio__image"
-            src="./assets/portfolio/header.png"
-            alt="image"
-          />
-          <img
-            class="portfolio__image"
-            src="./assets/portfolio/header.png"
-            alt="image"
-          />
-          <img
-            class="portfolio__image"
-            src="./assets/portfolio/header.png"
-            alt="image"
-          />
-          <img
-            class="portfolio__image"
-            src="./assets/portfolio/header.png"
-            alt="image"
-          />
-          <img
-            class="portfolio__image"
-            src="./assets/portfolio/header.png"
-            alt="image"
-          />
-          <img
-            class="portfolio__image"
-            src="./assets/portfolio/header.png"
-            alt="image"
-          />
-          <img
-            class="portfolio__image"
-            src="./assets/portfolio/header.png"
-            alt="image"
-          />
-          <img
-            class="portfolio__image"
-            src="./assets/portfolio/header.png"
-            alt="image"
-          />
-          <img
-            class="portfolio__image"
-            src="./assets/portfolio/header.png"
-            alt="image"
-          />
-          <img
-            class="portfolio__image"
-            src="./assets/portfolio/header.png"
-            alt="image"
-          />
-          <img
-            class="portfolio__image"
-            src="./assets/portfolio/header.png"
-            alt="image"
-          />
-          <img
-            class="portfolio__image"
-            src="./assets/portfolio/header.png"
-            alt="image"
-          />
+          <div class="portolio__wrapper-image">
+            <img
+                class="portfolio__image"
+                src="./assets/portfolio/portfolio-1.png"
+                alt="image"
+              />
+          </div>
+          <div class="portolio__wrapper-image">
+            <img
+                class="portfolio__image"
+                src="./assets/portfolio/portfolio-2.png"
+                alt="image"
+              />
+          </div>
+          <div class="portolio__wrapper-image">
+            <img
+                class="portfolio__image"
+                src="./assets/portfolio/portfolio-4.png"
+                alt="image"
+              />
+          </div>
+          <div class="portolio__wrapper-image">
+            <img
+                class="portfolio__image"
+                src="./assets/portfolio/portfolio-4.png"
+                alt="image"
+              />
+          </div>
+          <div class="portolio__wrapper-image">
+            <img
+                class="portfolio__image"
+                src="./assets/portfolio/portfolio-6.png"
+                alt="image"
+              />
+          </div>
+          <div class="portolio__wrapper-image">
+            <img
+                class="portfolio__image"
+                src="./assets/portfolio/portfolio-6.png"
+                alt="image"
+              />
+          </div>
+          <div class="portolio__wrapper-image">
+            <img
+                class="portfolio__image"
+                src="./assets/portfolio/portfolio-7.png"
+                alt="image"
+              />
+          </div>
+          <div class="portolio__wrapper-image">
+            <img
+                class="portfolio__image"
+                src="./assets/portfolio/portfolio-8.png"
+                alt="image"
+              />
+          </div>
+          <div class="portolio__wrapper-image">
+            <img
+                class="portfolio__image"
+                src="./assets/portfolio/portfolio-9.png"
+                alt="image"
+              />
+          </div>
+          <div class="portolio__wrapper-image">
+            <img
+                class="portfolio__image"
+                src="./assets/portfolio/portfolio-10.png"
+                alt="image"
+              />
+          </div>
+          <div class="portolio__wrapper-image">
+            <img
+                class="portfolio__image"
+                src="./assets/portfolio/portfolio-11.png"
+                alt="image"
+              />
+          </div>
+          <div class="portolio__wrapper-image">
+            <img
+                class="portfolio__image"
+                src="./assets/portfolio/portfolio-11.png"
+                alt="image"
+              />
+          </div>
         </div>
       </section>
       <div class="portfolio__divider"></div>
@@ -338,10 +362,10 @@
         <h2 class="quote__header">Get a Quote</h2>
         <p class="quote__paragraph">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
         <div class="quote__quote">
-            <form class="quote__inputs">
+            <form class="quote__form">
                 <input class="quote__input" type="text" name="name" placeholder="Name (Required)" required>
                 <input class="quote__input" type="email" name="email" placeholder="Email (Required)" required>
-                <input class="quote__input" type="tel" name="tel" placeholder="Subject">
+                <input class="quote__input" type="text" name="subject" placeholder="Subject">
                 <textarea class="quote__input quote__input_text-area" name="detail" placeholder="Describe your project in detail..."></textarea>
                 <input class="quote__input_submit" type="submit" name="submit" placeholder="Submit">
             </form>
@@ -403,8 +427,15 @@
         </a>
       </div>
     </footer>
+    <div class="submit-modal__opacity"></div>
     <div class="submit-modal">
-
+      <div class="submit-modal__wrapper">
+        <span>Письмо отправлено</span>
+        <span class="submit-modal__theme"></span>
+        <span class="submit-modal__description"></span>
+        <span>OK</span>
+        <button class="submit-modal__close" type="button">Close</button>
+      </div>
     </div>
     <script src="./script.js"></script>
   </body>
