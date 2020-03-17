@@ -44,6 +44,14 @@ ul {
 
 /* HEADER */
 
+.header__wrapper {
+  z-index: 5;
+  position: fixed;
+  height: 95px;
+  top: 0;
+  width: 1020px;
+}
+
 .header {
   height: 89px;
   display: flex;
@@ -95,6 +103,10 @@ ul {
 }
 
 /* MAIN */
+
+.main {
+  margin-top: 94px;
+}
 
 .slider {
   height: 594px;
