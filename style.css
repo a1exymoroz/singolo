@@ -24,6 +24,18 @@ body {
   margin: auto;
 }
 
+body,
+html {
+  scroll-behavior: smooth;
+}
+
+:target {
+  /* display: block; */
+  /* position: relative; */
+  /* top: -100px; */
+  /* visibility: hidden; */
+}
+
 body.body-modal {
   overflow: hidden;
 }
@@ -45,9 +57,9 @@ ul {
 /* HEADER */
 
 .header__wrapper {
-  z-index: 5;
-  position: fixed;
-  height: 95px;
+  z-index: 10;
+  position: sticky;
+  height: 94px;
   top: 0;
   width: 1020px;
 }
@@ -104,13 +116,10 @@ ul {
 
 /* MAIN */
 
-.main {
-  margin-top: 94px;
-}
-
 .slider {
   height: 594px;
   position: relative;
+  overflow: hidden;
 }
 
 .slider__arrow {
@@ -119,7 +128,7 @@ ul {
   height: 27px;
   position: absolute;
   top: 281px;
-  z-index: 1;
+  z-index: 5;
   transition: width 0.5s, height 0.5s;
 }
 
@@ -138,7 +147,13 @@ ul {
 
 .slide__wrapper {
   display: flex;
-  transition: transform 0.6s ease;
+  width: 4080px;
+  position: relative;
+  left: -1020px;
+}
+
+.slide__wrapper_move {
+  transition: 0.6s ease;
 }
 
 .slide__item {
@@ -147,13 +162,6 @@ ul {
   left: 0;
   height: 594px;
   width: 1020px;
-  animation-name: fade;
-  animation-duration: 1.5s;
-  display: none;
-}
-
-.slide__item:first-child {
-  display: block;
 }
 
 .slide-one {
@@ -162,15 +170,6 @@ ul {
 
 .slide-two {
   background-color: var(--theme-secondary);
-}
-
-@keyframes fade {
-  from {
-    opacity: 0.2;
-  }
-  to {
-    opacity: 1;
-  }
 }
 
 .phone {
@@ -384,8 +383,8 @@ ul {
 .portfolio__images {
   display: grid;
   gap: 20px;
-  width: 950px;
-  height: 619px;
+  width: 940px;
+  height: 610px;
   overflow: hidden;
   grid-template-columns: repeat(4, 220px);
   padding-top: 20px;
@@ -396,6 +395,8 @@ ul {
 }
 
 .portfolio__image_active {
+  width: 210px;
+  height: 177px;
   border: 5px solid var(--primary-accent-color);
 }
 
