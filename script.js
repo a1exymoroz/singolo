@@ -1,6 +1,44 @@
 function initHeader() {
   const SITE_NAV = document.querySelector(".header-nav");
   const SITE_NAV_LIST = SITE_NAV.querySelectorAll("a");
+  const ASIDE_SITE_NAV = document.querySelector(".aside__navigation");
+  const ASIDE_SITE_NAV_LIST = ASIDE_SITE_NAV.querySelectorAll("a");
+  const ASIDE_SITE_NAV_WRAPPER = document.querySelector(
+    ".aside__navigation-wrapper"
+  );
+  const ASIDE_SITE_NAV_LISTS = document.querySelector(".aside__nav");
+
+  SITE_NAV.addEventListener("click", event => {
+    event.stopPropagation();
+    if (event.target.classList.contains("header-nav__link")) {
+      SITE_NAV_LIST.forEach(listItem => {
+        listItem.classList.remove("header-nav__link_active");
+      });
+      event.target.classList.add("header-nav__link_active");
+    }
+  });
+
+  ASIDE_SITE_NAV.addEventListener("click", event => {
+    event.stopPropagation();
+    if (event.target.classList.contains("aside-nav__link")) {
+      ASIDE_SITE_NAV_LIST.forEach(listItem => {
+        listItem.classList.remove("aside-nav__link_active");
+      });
+      event.target.classList.add("aside-nav__link_active");
+    }
+  });
+
+  document
+    .querySelector(".header_burger-menu")
+    .addEventListener("click", event => {
+      event.stopPropagation();
+      event.currentTarget.classList.toggle("header_burger-menu_active");
+      ASIDE_SITE_NAV.classList.toggle("aside__navigation_active");
+      ASIDE_SITE_NAV_WRAPPER.classList.toggle(
+        "aside__navigation-wrapper_active"
+      );
+      ASIDE_SITE_NAV_LISTS.classList.toggle("aside__nav_active");
+    });
 
   // document.addEventListener("scroll", onScroll);
 
@@ -34,16 +72,6 @@ function initHeader() {
   //     }
   //   });
   // }
-
-  SITE_NAV.addEventListener("click", event => {
-    event.stopPropagation();
-    if (event.target.classList.contains("header-nav__link")) {
-      SITE_NAV_LIST.forEach(listItem => {
-        listItem.classList.remove("header-nav__link_active");
-      });
-      event.target.classList.add("header-nav__link_active");
-    }
-  });
 
   document.querySelectorAll(".phone__pic").forEach(element => {
     element.addEventListener("click", event => {
