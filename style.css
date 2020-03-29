@@ -119,7 +119,7 @@ ul {
   background-color: var(--theme-darker);
   justify-content: space-between;
   align-items: center;
-  padding: 32px 40px;
+  padding: 37px 40px;
 }
 
 .header_burger-menu {
@@ -188,7 +188,7 @@ ul {
   width: 16px;
   height: 27px;
   position: absolute;
-  top: 50%;
+  top: 284px;
   z-index: 5;
   transition: width 0.5s, height 0.5s;
 }
@@ -603,7 +603,7 @@ ul {
 }
 
 .quote__input_text-area {
-  height: 157px;
+  height: 164px;
   padding-top: 6px;
   resize: none;
   margin-bottom: 12px;
@@ -683,7 +683,7 @@ ul {
 /* FOOTER */
 
 .footer {
-  height: 76px;
+  height: 80px;
   background-color: var(--theme-darker);
   display: flex;
   align-items: center;
@@ -745,6 +745,18 @@ ul {
 
   .slider {
     height: 445px;
+  }
+
+  .slider__arrow {
+    top: 213px;
+  }
+
+  .slider__arrow_left {
+    left: 30px;
+  }
+
+  .slider__arrow_right {
+    right: 27px;
   }
 
   .phone {
@@ -960,9 +972,9 @@ ul {
   }
 
   .portfolio__images {
-    gap: 12px;
-    grid-template-columns: repeat(2, 150px);
-    grid-template-rows: repeat(3, 130px);
+    gap: 14px;
+    grid-template-columns: repeat(2, 148px);
+    grid-template-rows: repeat(3, 128px);
     padding-top: 24px;
     padding-bottom: 32px;
   }
@@ -995,7 +1007,7 @@ ul {
 
   .quote__quote {
     padding-top: 24px;
-    padding-bottom: 40px;
+    padding-bottom: 31px;
     display: block;
     width: 100%;
   }
@@ -1004,6 +1016,12 @@ ul {
     width: 100%;
     margin-bottom: 12px;
   }
+
+  .quote__input_text-area {
+    margin-bottom: 8px;
+    height: 161px;
+  }
+
   .quote__input_submit {
     width: 100%;
     height: 51px;
@@ -1020,6 +1038,10 @@ ul {
 
   .quote-info__paragraph {
     margin-bottom: 12px;
+  }
+
+  .quote-info__item {
+    height: 25px;
   }
 
   .footer__copy {

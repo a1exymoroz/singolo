@@ -9,12 +9,16 @@ function initHeader() {
   const BURGER_MENU = document.querySelector(".header_burger-menu");
   const BODY = document.querySelector("body");
 
-  ASIDE_SITE_NAV_WRAPPER.addEventListener("click", event => {
-    event.stopPropagation();
+  const toggleBurger = () => {
     BURGER_MENU.classList.toggle("header_burger-menu_active");
     ASIDE_SITE_NAV.classList.toggle("aside__navigation_active");
-    event.currentTarget.classList.toggle("aside__navigation-wrapper_active");
+    ASIDE_SITE_NAV_WRAPPER.classList.toggle("aside__navigation-wrapper_active");
     BODY.classList.toggle("body-modal");
+  };
+
+  ASIDE_SITE_NAV_WRAPPER.addEventListener("click", event => {
+    event.stopPropagation();
+    toggleBurger();
   });
 
   SITE_NAV.addEventListener("click", event => {
@@ -34,15 +38,13 @@ function initHeader() {
         listItem.classList.remove("aside-nav__link_active");
       });
       event.target.classList.add("aside-nav__link_active");
+      toggleBurger();
     }
   });
 
   BURGER_MENU.addEventListener("click", event => {
     event.stopPropagation();
-    event.currentTarget.classList.toggle("header_burger-menu_active");
-    ASIDE_SITE_NAV.classList.toggle("aside__navigation_active");
-    ASIDE_SITE_NAV_WRAPPER.classList.toggle("aside__navigation-wrapper_active");
-    BODY.classList.toggle("body-modal");
+    toggleBurger();
   });
 
   // document.addEventListener("scroll", onScroll);
